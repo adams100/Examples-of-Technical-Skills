@@ -27,7 +27,6 @@ Qtys := []
 mfgs := []
 descs := []
 pns := []
-partlinecounter := 0
 Loop, % numFields
 {
 	ToolTip, % A_Index
