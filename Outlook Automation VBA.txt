@@ -1,0 +1,69 @@
+'The Script below is an example of how you can use the COM interface to automate outlook.
+'In this case, we export all (.pdf) attachments to a folder if the email was sent after 8/1/2020
+'
+
+Sub DemoTable()
+    'Declarations
+    Dim Filter As String
+    Dim oRow As Outlook.Row
+    Dim oTable As Outlook.Table
+    Dim oFolder As Outlook.Folder
+  
+    'Get a Folder object for the Inbox
+    Set oFolder = Application.Session.GetDefaultFolder(olFolderInbox)
+    
+    Dim Storeid As Variant
+    Storeid = oFolder.Storeid
+    
+    'get namesapce obj
+    Set myNameSpace = Application.GetNamespace("MAPI")
+    
+    'Define Filter to obtain items last modified
+    Filter = "[CreationTime] > '8/1/2020'"
+    
+    'Restrict with Filter
+    Set oTable = oFolder.GetTable(Filter)
+    
+    'load table to array
+    Dim varArray As Variant
+    varArray = oTable.GetArray(oTable.GetRowCount)
+    
+    Dim i As Integer
+    Dim imax As Integer
+    Dim o As Integer
+    Dim omax As Variant
+    imax = UBound(varArray)
+    omax = UBound(varArray, 2)
+    Dim ids() As Variant
+    ReDim ids(imax)
+    
+    'load ids array with ids of mail items to later get attachments
+    For i = 0 To imax
+        'For o = 0 To omax
+            'rowstring = rowstring & varArray(i, o) & ","
+        'Next o
+        ids(i) = varArray(i, 0)
+        'rowstring = ""
+    Next i
+    
+    'objfile.Close
+    'MsgBox "done"
+    
+    Dim sentto As String
+    Dim sentfrom As String
+    For i = 0 To UBound(ids)
+        Set MailItem = myNameSpace.GetItemFromID(ids(i), Storeid)
+        Set Atts = MailItem.Attachments
+        If Atts.Count > 0 Then
+            For x = 1 To Atts.Count
+                Set Att = Atts.Item(x)
+                If InStr(Att.FileName, ".pdf") Then
+                    Att.SaveAsFile ("C:\Users\User\OneDrive\Desktop\Email Photos\" & Att.FileName)
+                End If
+            Next
+        End If
+            
+   
+    Next i
+
+End Sub
