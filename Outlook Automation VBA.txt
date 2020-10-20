@@ -46,7 +46,6 @@ Sub DemoTable()
         'rowstring = ""
     Next i
     
-    'objfile.Close
     'MsgBox "done"
     
     Dim sentto As String
