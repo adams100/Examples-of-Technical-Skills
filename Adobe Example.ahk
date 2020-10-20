@@ -1,4 +1,11 @@
-﻿
+﻿;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Script was created to transfer data from a PDF order form to a shopping cart
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; The below script is triggered from a keypress.  It then reads a PDF file, collects the desired data and
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;formats it as needed directly to the clipboard.  From there the user can paste into an online shopping cart  
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;with minimal data entry
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; triggers when Ctrl + Shift + 8 is pressed
