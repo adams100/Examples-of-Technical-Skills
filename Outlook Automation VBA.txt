@@ -46,7 +46,6 @@ Sub DemoTable()
         'rowstring = ""
     Next i
     
-    'MsgBox "done"
     
     Dim sentto As String
     Dim sentfrom As String
