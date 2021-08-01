@@ -15,7 +15,7 @@ Extract pages that include a single search term OR a list of search terms.  If t
 
 ![see preview](img.jpg)
 
-<h2>*Adobe Text Extraction (AutoHotkey)</h2>
+<h2>Adobe Text Extraction (AutoHotkey)</h2>
 <h3>Extract data from a PDF fillable form</h3>
 <h3>
   
