@@ -6,7 +6,7 @@ This repository was created to hold code examples that demonstrate the use of my
 <h3>Example of Adobe's Interapplication Communication API</h3>
 <br>
 
-![See Code Here!](Adobe Extract Pages Based on Text.ahk)
+[a See Code Here!](Adobe%20Extract%20Pages%20Based%20on%20Text.ahk)
 
 <br>
 
