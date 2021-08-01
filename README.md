@@ -5,7 +5,7 @@ This repository was created to hold code examples that demonstrate the use of my
 <h2>PDF Page Extractor (AutoHotkey)</h2>
 <h3>Example of Adobe's Interapplication Communication API</h3>
 
-<h1 id='adobe-extract'><a src="Adobe%20Extract%20Pages%20Based%20on%20Text.ahk">See Code Here!</a></h1>
+<a src="Adobe%20Extract%20Pages%20Based%20on%20Text.ahk"><h1 id='adobe-extract'>See Code Here!</h1></a>
 
 [See Code Here!](#adobe-extract)
 <br>
