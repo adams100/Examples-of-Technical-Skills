@@ -4,7 +4,7 @@ This repository was created to hold code examples that demonstrate the use of my
 
 <h2>PDF Page Extractor</h2>
 <h3>Example of Adobe's Interapplication Communication API</h3>
-Extract pages that include a single search term OR a list of search terms.  If they appear in one of the PDF pages, then that page will be extracted into a new PDF document!  This functionality is not available in Adobe Acrobat Pro.  Program references the active PDF file
+Extract pages that include a single search term OR a list of search terms.  If they appear in one of the PDF pages, then that page will be extracted into a new PDF document!  This functionality is not available in Adobe Acrobat Pro.  Program references the active PDF file for simplicity and ease of use.
 <br>
 <br>
 
