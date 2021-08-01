@@ -8,5 +8,12 @@ Extract pages that include a single search term OR a list of search terms.  If t
 <br>
 <br>
 
-
 ![see preview](img.jpg)
+
+<h2>Adobe Text Extraction</h2>
+<h3>Extract data from a PDF fillable form</h3>
+This program is form and useage specific, however it displays the ability to extract text from a pdf form and then transforming the data into a desired format.  In this case, we pull data from the PDF form and format it to be easily pasted into an online shopping cart.  Tedious data entry avoided!
+
+
+
+
