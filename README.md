@@ -17,7 +17,7 @@ This program is form and usage specific, however it displays the ability to extr
 <br>
 <h2>Outlook Automation (VBA)</h2>
 <h3>Extract attachments from emails and send them to a folder!</h3>
-This program is usage specific, however it displays the ability to extract email attachments.  It references the default Outlook email inbox and iterates all messages.  If a PDF file exists, then it saves that file to an output file!  Using the other tools above we can extract the text and analyse the data!
+This program is usage specific, however it displays the ability to extract email attachments.  It references the default Outlook email inbox and iterates all messages.  If a PDF file exists, then it saves that file to an output folder!  Using the other tools above we can extract the text and analyse the data!
 
 
 
